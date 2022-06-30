@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "00fedc13-cfea-4ae3-82a2-2c6115a22730",
+    "colId": "3aae5397-6d2a-413c-9d88-d45e02204180",
+    "containerId": "",
+    "name": "GET products ",
+    "url": "localhost:3000/products/a",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-30T14:45:39.694Z",
+    "modified": "2022-06-30T20:51:15.125Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
