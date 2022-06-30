@@ -12,5 +12,24 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "26efaf85-db67-4dfa-9e17-904e2f614af1",
+    "colId": "3aae5397-6d2a-413c-9d88-d45e02204180",
+    "containerId": "",
+    "name": "POST products",
+    "url": "localhost:3000/products",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-06-30T21:10:50.133Z",
+    "modified": "2022-06-30T22:15:08.668Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"name\":\"Sabão em pó\" \n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
