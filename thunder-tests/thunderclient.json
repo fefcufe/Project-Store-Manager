@@ -22,12 +22,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-06-30T21:10:50.133Z",
-    "modified": "2022-06-30T22:15:08.668Z",
+    "modified": "2022-07-04T16:28:31.081Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"name\":\"Sabão em pó\" \n}",
+      "raw": "{\n   \n}",
       "form": []
     },
     "tests": []

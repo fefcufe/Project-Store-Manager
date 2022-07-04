@@ -1,4 +1,3 @@
-// const Joi = require('joi');
 const productsModel = require('../models/products');
 
 const getAllService = async () => {
@@ -12,10 +11,10 @@ const getProductByIdService = async (id) => {
 };
 
 const createProductService = async ({ name }) => {
-  const  id  = await productsModel.addProductModel({ name });
+  const id = await productsModel.addProductModel({ name });
   return {
     id,
-    name
+    name,
   };
 };
 
@@ -23,4 +22,4 @@ module.exports = {
   getAllService,
   getProductByIdService,
   createProductService,
-}
+};

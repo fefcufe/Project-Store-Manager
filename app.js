@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
-const errorMiddleware = require('./middlewares/errorMiddleware');
-const productsRouter = require('./Routes/productsRoutes')
+const productsRouter = require('./Routes/productsRoutes');
+
 const app = express();
 app.use(express.json());
 
@@ -16,5 +16,4 @@ app.use('/products', productsRouter);
 // você pode registrar suas rotas normalmente, como o exemplo acima
 // você deve usar o arquivo index.js para executar sua aplicação 
 
-app.use(errorMiddleware);
 module.exports = app;

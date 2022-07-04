@@ -1,6 +1,6 @@
 const app = require('./app');
 require('dotenv').config();
-const productsRouter = require('./Routes/productsRoutes')
+const productsRouter = require('./Routes/productsRoutes');
 // não altere esse arquivo, essa estrutura é necessária para à avaliação do projeto
 
 app.use('/products', productsRouter);
