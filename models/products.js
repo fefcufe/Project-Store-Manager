@@ -17,6 +17,7 @@ const addProductModel = async (data) => {
   VALUES (?);
   `;
   const [{ insertId }] = await connection.execute(query, [data.name]);
+  console.log(insertId);
   return insertId;
 };
 

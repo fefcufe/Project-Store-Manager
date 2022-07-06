@@ -8,28 +8,21 @@ describe(' addProductModel insere um novo produto no BD', () => {
     name: 'sabão de coco'
   };
 
-  before(async () => {
-    const executeResponse = [{ insertedId: 1 }];
+  before( async () => {
+    const executeResponse = [{ insertId: 1 }];
     sinon.stub(connection, 'execute').resolves(executeResponse);
   })
 
-  after(async () => {
+  after( async () => {
     connection.execute.restore();
   })
 
 
-  describe('produto é inserido com sucesso', () => {
-    it('retorna um objeto', async () => {
+  describe('quando existe um produto', () => {
+    
+    it('retorna o id gerado', async () => {
       const response = await productsModel.addProductModel(payloadProduct)
-      expect(response).to.be.a('object');
-      
+      expect(response).to.be.equal(1);
     });
-
-    it('objeto retornado possui id e nome do produto adicionado', async () => {
-      const response = await productsModel.addProductModel(payloadProduct);
-      expect(response).to.have.property('id').to.equal(1);
-      expect(response).to.have.property('name');
-    })
   });
-
 });
