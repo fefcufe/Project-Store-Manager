@@ -76,4 +76,79 @@ describe('addNewProduct', () => {
       expect(response.json.calledWith(responseService)).to.be.equal(true);
     })
   })
+});
+
+describe('getAllController', () => {
+  const response = {};
+  const request = {};
+  const responseService =
+  [
+    {
+      "id": 1,
+      "name": "Martelo de Thor",
+    },
+    {
+      "id": 2,
+      "name": "Traje de encolhimento",
+    }
+  ];
+  
+  describe('quando não existem produtos no DB', () => {
+    const responseService = [];
+
+    before(() => {
+      response.status = sinon.stub().returns(response);
+      response.json = sinon.stub().returns();
+      sinon.stub(productsService, 'getAllService').resolves(responseService);
+    });
+
+    after(() => {
+      productsService.getAllService.restore();
+    });
+
+    it('getAll é chamada com código 200', async () => {
+      await productsController.getAllController(request, response);
+      expect(response.status.calledWith(200)).to.be.equal(true);
+    })
+
+    it('getAll retorna um objeto json com um array vazio', async () => {
+      await productsController.getAllController(request, response);
+      expect(response.json.calledWith(responseService)).to.be.equal(true);
+    }) 
+  })
+
+  describe('quando existem produtos no DB', () => {
+    const responseService =
+    [
+      {
+        "id": 1,
+        "name": "Martelo de Thor",
+      },
+      {
+        "id": 2,
+        "name": "Traje de encolhimento",
+      }
+    ]
+  
+    before(() => {
+      response.status = sinon.stub().returns(response);
+      response.json = sinon.stub().returns();
+      sinon.stub(productsService, 'getAllService').resolves(responseService);
+    });
+
+    after(() => {
+      productsService.getAllService.restore();
+    });
+
+    it('getAll é chamada com código 200', async () => {
+      await productsController.getAllController(request, response);
+      expect(response.status.calledWith(200)).to.be.equal(true);
+    })
+
+    it('getAll retorna um objeto json com um array com 2 objetos', async () => {
+      await productsController.getAllController(request, response);
+      expect(response.json.calledWith(responseService)).to.be.equal(true);
+    }) 
+
+  })
 })

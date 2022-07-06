@@ -26,3 +26,53 @@ describe(' addProductModel insere um novo produto no BD', () => {
     });
   });
 });
+
+describe('getAllProducts', () => {
+  
+  describe('possui produtos', () => {
+    const executeResponse =
+    [
+      [
+        {
+          "id": 1,
+          "name": "Martelo de Thor",
+        },
+        {
+          "id": 2,
+          "name": "Traje de encolhimento",
+        }
+      ]
+    ];
+  
+    before(async () => {
+      sinon.stub(connection, 'execute').resolves(executeResponse);
+    });
+
+    after(async () => {
+      connection.execute.restore();
+    })
+
+    it('retorna um array de objetos', async () => {
+
+      const response = await productsModel.getAllProducts();
+      expect(response).to.be.a('array').with.lengthOf(2);
+    });
+  });
+
+  describe('não possui produtos', () => {
+    const executeResponseEmpty = [[]];
+
+    before(async () => {
+      sinon.stub(connection, 'execute').resolves(executeResponseEmpty);
+    });
+
+    after(async () => {
+      connection.execute.restore();
+    })
+
+    it('retorna um array vazio', async () => {
+      const response = await productsModel.getAllProducts();
+      expect(response).to.be.empty;
+    });
+  })
+})
