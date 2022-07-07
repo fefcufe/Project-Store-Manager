@@ -23,10 +23,19 @@ const addProductModel = async (data) => {
 };
 
 const updateProductModel = async ({ name, id }) => {
+  console.log({ primeiro: name });
+  console.log({ segundo: id });
   const query = `UPDATE StoreManager.products 
     SET name = ?
     WHERE id = ?;`;
   await connection.execute(query, [name, id]);
+};
+
+const removeProductModel = async (id) => {
+  const query = `DELETE FROM StoreManager.products 
+    WHERE id =?;`;
+  await connection.execute(query, [id]);
+  return true;
 };
 
 module.exports = {
@@ -34,4 +43,5 @@ module.exports = {
   getProductByIdModel,
   addProductModel,
   updateProductModel,
+  removeProductModel,
 };

@@ -9,4 +9,6 @@ router.get('/:id', productsController.getProductByIdController);
 // router.post('/', middlewareProducts, productsController.addNewProduct);
 router.post('/', productsController.addNewProduct);
 router.put('/:id', productsController.updateProductController);
+router.delete('/:id', productsController.removeProductController);
+
 module.exports = router;

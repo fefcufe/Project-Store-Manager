@@ -37,7 +37,7 @@ const addNewProduct = async (req, res, _next) => {
 const updateProductController = async (req, res, _next) => {
   try { 
     const { name } = req.body;
-    const id = Number(req.params.id);
+    const { id } = req.params;
     const data = await serviceProducts.getProductByIdService(id);
     if (!data || data.length === 0) {
     return res.status(404).json({ message: 'Product not found' });
@@ -49,9 +49,27 @@ const updateProductController = async (req, res, _next) => {
   }
 };
 
+const removeProductController = async (req, res, _next) => {
+  try {
+    const { id } = req.params;
+    console.log(id);
+    console.log(typeof id);
+    const idExists = await serviceProducts.getProductByIdService(id);
+    if (!idExists || idExists.length === 0) {
+      return res.status(404).json({ message: 'Product not found' });
+    }
+    const bool = await serviceProducts.removeProductService(id);
+    console.log(bool);
+    return res.status(204).end();
+  } catch (e) {
+    res.status(500).json({ message: e.message });
+  }
+};
+
 module.exports = {
   getAllController,
   getProductByIdController,
   addNewProduct,
   updateProductController,
+  removeProductController,
 };
