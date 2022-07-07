@@ -31,5 +31,19 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "df671a92-abd4-4225-9372-4bd9f899aa4c",
+    "colId": "3aae5397-6d2a-413c-9d88-d45e02204180",
+    "containerId": "",
+    "name": "GET sales",
+    "url": "localhost:3000/sales/5",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2022-07-06T18:04:18.292Z",
+    "modified": "2022-07-07T13:06:24.407Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
