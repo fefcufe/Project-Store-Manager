@@ -34,8 +34,24 @@ const addNewProduct = async (req, res, _next) => {
   }
 };
 
+const updateProductController = async (req, res, _next) => {
+  try { 
+    const { name } = req.body;
+    const id = Number(req.params.id);
+    const data = await serviceProducts.getProductByIdService(id);
+    if (!data || data.length === 0) {
+    return res.status(404).json({ message: 'Product not found' });
+    }
+    await serviceProducts.updateProductService({ name, id });
+    res.status(200).json({ id, name });
+  } catch (e) {
+    return res.status(500).json({ message: e.message });
+  }
+};
+
 module.exports = {
   getAllController,
   getProductByIdController,
   addNewProduct,
+  updateProductController,
 };

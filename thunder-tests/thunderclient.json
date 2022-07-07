@@ -45,5 +45,24 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "6f52f38b-3a6c-438c-883a-5f6d80c16ebb",
+    "colId": "3aae5397-6d2a-413c-9d88-d45e02204180",
+    "containerId": "",
+    "name": "PUT products/:id",
+    "url": "localhost:3000/products/2",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2022-07-07T13:25:50.526Z",
+    "modified": "2022-07-07T14:33:01.240Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"name\": \"Escudo da Mulher Maravilha\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

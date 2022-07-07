@@ -8,4 +8,5 @@ router.get('/', productsController.getAllController);
 router.get('/:id', productsController.getProductByIdController);
 // router.post('/', middlewareProducts, productsController.addNewProduct);
 router.post('/', productsController.addNewProduct);
+router.put('/:id', productsController.updateProductController);
 module.exports = router;
