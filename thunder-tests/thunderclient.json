@@ -70,11 +70,11 @@
     "colId": "3aae5397-6d2a-413c-9d88-d45e02204180",
     "containerId": "",
     "name": "DELETE producst/:id",
-    "url": "localhost:3000/products/3",
+    "url": "localhost:3000/products/1",
     "method": "DELETE",
     "sortNum": 50000,
     "created": "2022-07-07T17:38:15.737Z",
-    "modified": "2022-07-07T20:19:53.293Z",
+    "modified": "2022-07-07T20:28:59.040Z",
     "headers": [],
     "params": [],
     "tests": []

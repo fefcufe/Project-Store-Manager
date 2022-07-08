@@ -58,8 +58,7 @@ const removeProductController = async (req, res, _next) => {
     if (!idExists || idExists.length === 0) {
       return res.status(404).json({ message: 'Product not found' });
     }
-    const bool = await serviceProducts.removeProductService(id);
-    console.log(bool);
+    await serviceProducts.removeProductService(id);
     return res.status(204).end();
   } catch (e) {
     res.status(500).json({ message: e.message });

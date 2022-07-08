@@ -1,0 +1,83 @@
+[33mcommit 9f3d83741d9dbdf7715df6a23ded16c941ed0758[m[33m ([m[1;36mHEAD -> [m[1;32mfernanda-ferreira-sd-019-b-store-manager[m[33m, [m[1;31morigin/fernanda-ferreira-sd-019-b-store-manager[m[33m)[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Thu Jul 7 17:26:27 2022 -0300
+
+    feat: requisito 12 sem passar nos testes
+
+[33mcommit 096e7ee4fe2f6c73a2c42da82a9ecddc50e2a058[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Thu Jul 7 11:56:52 2022 -0300
+
+    feat: requisito 10 não testado
+
+[33mcommit 857a5433e6b170d35d2d01c45a336b51c7a7f281[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Thu Jul 7 10:07:28 2022 -0300
+
+    feat: requisito 8
+
+[33mcommit a624175d62a7619fb7822a2e4a9cd2acf969a461[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Wed Jul 6 14:30:04 2022 -0300
+
+    test: adiciona testes unitários GET poducts sem id
+
+[33mcommit f574c863306c36e5f4d8ed631b1e2b7996243433[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Wed Jul 6 10:54:48 2022 -0300
+
+    test: adiciona testes unitários POST /products
+
+[33mcommit 38995efe456c201d3502ce3f61cf386c224da48d[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Mon Jul 4 21:44:43 2022 -0300
+
+    feat: iniciando testes
+
+[33mcommit f9bd0ad02a254c39b1a5064bc96fc30badc8c73e[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Mon Jul 4 13:39:51 2022 -0300
+
+    fix: erros de lint
+
+[33mcommit bc25f2708926a1a730dea56faa6e3270463c8c33[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Mon Jul 4 13:34:41 2022 -0300
+
+    feat:requisito 4 feito
+
+[33mcommit c4a39c6b4b7ccfd7d584ef4f6ef01adc11de920b[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Thu Jun 30 19:16:10 2022 -0300
+
+    feat: requisito 3 cm erros de lint
+
+[33mcommit 8e4163b71931e77f34de5a69fb27161fc03a2d9a[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Thu Jun 30 18:06:39 2022 -0300
+
+    feat: requisito 1 com erros de lint
+
+[33mcommit b8f9c207c89191037f3b5abf4dbf92089c0aac11[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Fernanda Ferreira <fefcufe@gmail.com>
+Date:   Wed Jun 29 15:28:19 2022 -0300
+
+    abrindo pr
+
+[33mcommit d5c8a460c96e37b91878ffa83ec3f7f5e7e82793[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/junior_mira_store_manager[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: trybe-tech-ops <82593112+trybe-tech-ops@users.noreply.github.com>
+Date:   Wed Jun 29 11:57:24 2022 -0300
+
+    .github/workflows/main.yml updated
+
+[33mcommit ebc6050d2b600b5f8ef2b15b1975739749482a12[m
+Author: trybe-tech-ops <82593112+trybe-tech-ops@users.noreply.github.com>
+Date:   Wed Jun 29 11:57:23 2022 -0300
+
+    README.md updated
+
+[33mcommit 8bc2044f56d3a59bb0595736360d2c35f43e4903[m
+Author: trybe-tech-ops <82593112+trybe-tech-ops@users.noreply.github.com>
+Date:   Wed Jun 29 11:57:23 2022 -0300
+
+    Initial commit
