@@ -22,13 +22,14 @@ const addProductModel = async (data) => {
   return insertId;
 };
 
-const updateProductModel = async ({ name, id }) => {
+const updateProductModel = async (name, id) => {
   console.log({ primeiro: name });
   console.log({ segundo: id });
   const query = `UPDATE StoreManager.products 
     SET name = ?
     WHERE id = ?;`;
-  await connection.execute(query, [name, id]);
+  const [response] = await connection.execute(query, [name, id]);
+  return response;
 };
 
 const removeProductModel = async (id) => {

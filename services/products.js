@@ -18,8 +18,12 @@ const createProductService = async ({ name }) => {
   };
 };
 
-const updateProductService = async ({ name, id }) => {
-  await productsModel.updateProductModel({ name, id });
+const updateProductService = async (name, id) => {
+  await productsModel.updateProductModel(name, id);
+  return {
+    id,
+    name,
+  };
 };
 
 const removeProductService = async (id) => {

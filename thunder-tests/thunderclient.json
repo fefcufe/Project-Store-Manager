@@ -51,16 +51,16 @@
     "colId": "3aae5397-6d2a-413c-9d88-d45e02204180",
     "containerId": "",
     "name": "PUT products/:id",
-    "url": "localhost:3000/products/3",
+    "url": "localhost:3000/products/5",
     "method": "PUT",
     "sortNum": 40000,
     "created": "2022-07-07T13:25:50.526Z",
-    "modified": "2022-07-07T20:21:54.469Z",
+    "modified": "2022-07-08T13:39:34.035Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"name\": \"Escudo da Mulher Maravilha\"\n}",
+      "raw": "{\n    \"name\": \"jghgfhgf\"\n}",
       "form": []
     },
     "tests": []
