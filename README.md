@@ -11,3 +11,37 @@ A API construida é um sistema de gerenciamento de vendas no formato dropshippin
   ![DER](./public/erStoreManager.png)
 
   ---
+  
+   ## Utilizando o MongoDB via Docker 🐳:
+
+  1. Baixe a imagem do MongoDB:
+
+  ```sh
+  docker pull mongo
+  ```
+
+  2. Crie o contêiner do MongoDB:
+
+  ```sh
+  docker run --name <nome-do-container> -p 27017:27017 -d mongo
+  ```
+
+  3. Confira se o contêiner está rodando:
+
+  ```sh
+  docker ps
+  ```
+
+ ## Rodando o projeto com Docker 🐳
+
+ 1. Rode os serviços `node` e `mongodb`:
+
+  ```sh
+  docker-compose up -d
+  ```
+ 2. Instale as dependências dentro do container `car_shop` do `node`:
+
+  ```sh
+  docker exec -it car_shop bash
+  npm install
+  ```
